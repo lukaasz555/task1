@@ -2,7 +2,6 @@
 module.exports = {
   content: [],
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
-  darkMode: false,
   theme: {
     extend: {
       colors: {
@@ -25,6 +24,13 @@ module.exports = {
         "tw-xs-plus": "0.875rem", // 14px
         "tw-xs": "0.75rem", // 12px
         "tw-xxs": "0.625rem", // 10px
+      },
+      fontWeight: {
+        "tw-800": "800",
+        "tw-700": "700",
+        "tw-600": "600",
+        "tw-500": "500",
+        "tw-400": "400",
       },
       borderRadius: {
         "tw-sm": "0.625rem", // 10px
