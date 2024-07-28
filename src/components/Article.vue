@@ -1,31 +1,36 @@
 <template>
-  <v-row style="border: 1px solid red" tag="article" class="flex items-center">
+  <v-row tag="article" class="flex items-center mb-12" no-gutters>
     <v-col
       cols="12"
-      sm="7"
-      style="border: 1px solid blue"
+      sm="6"
       :class="['order-0', isEven ? 'order-sm-0' : 'order-sm-2']"
     >
       <v-img
         :src="getArticleImage()"
         alt="Article image"
-        width="100%"
-        height="100%"
+        cover
+        class="rounded-tw-xl"
       ></v-img>
     </v-col>
-    <v-col cols="12" sm="5" style="border: 1px solid blue" :class="['order-1']">
-      <div class="flex flex-col" style="border: 1px solid red">
+
+    <v-col cols="12" sm="6" class="order-1">
+      <div
+        class="flex flex-col gap-md"
+        :class="[isEven ? 'pl-[32px]' : 'pr-[32px]']"
+      >
         <slot name="title">
           <h3 class="section-title">{{ article.title }}</h3>
         </slot>
         <slot name="content">
-          <p
-            v-for="(text, index) in article.content"
-            :key="`article-${article.id}-content-${index}`"
-            class="section-text"
-          >
-            {{ text }}
-          </p>
+          <div>
+            <p
+              v-for="(text, index) in article.content"
+              :key="`article-${article.id}-content-${index}`"
+              class="section-text"
+            >
+              {{ text }}
+            </p>
+          </div>
         </slot>
       </div>
     </v-col>

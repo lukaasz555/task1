@@ -13,8 +13,10 @@ declare module 'vue' {
     Button: typeof import('./src/components/UI/Button.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     FooterSection: typeof import('./src/components/FooterSection.vue')['default']
+    Header: typeof import('./src/components/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Subheader: typeof import('./src/components/Subheader.vue')['default']
   }
 }
