@@ -1,9 +1,8 @@
 <template>
   <v-app>
-    <v-main>
+    <v-main class="mx-auto" style="max-width: 1232px">
       <router-view />
     </v-main>
-    <div>test</div>
   </v-app>
 </template>
 

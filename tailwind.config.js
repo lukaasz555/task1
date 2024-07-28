@@ -11,6 +11,7 @@ module.exports = {
         "tw-text": "#293632",
         "tw-gray": "#808080",
         "tw-border": "#ADADAD",
+        "tw-bg-gray": "#F5F5F5",
       },
       fontSize: {
         "tw-xxl": "3.25rem", // 52px
@@ -37,6 +38,12 @@ module.exports = {
         "tw-md": "0.875rem", // 14px
         "tw-lg": "1.25rem", // 20px
         "tw-xl": "1.875rem", // 30px
+      },
+      gap: {
+        xxl: "3rem", // 48px
+        xl: "2rem", // 32px
+        lg: "1.875rem", // 30px
+        md: "1.5rem", // 24px
       },
     },
   },
