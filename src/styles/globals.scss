@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.section-title {
+		@apply text-tw-lg-plus font-tw-700 text-tw-text leading-tight;
+	}
+
+	.section-text {
+		@apply text-tw-base font-tw-400 text-tw-text leading-snug;
+	}
+}
