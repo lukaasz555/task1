@@ -5,5 +5,3 @@
     <slot name="footer">footer</slot>
   </v-container>
 </template>
-
-<script setup lang="ts"></script>
