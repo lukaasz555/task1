@@ -10,13 +10,16 @@ declare module 'vue' {
     Article: typeof import('./src/components/Article.vue')['default']
     ArticlesList: typeof import('./src/components/ArticlesList.vue')['default']
     BaseLayout: typeof import('./src/components/BaseLayout.vue')['default']
-    Button: typeof import('./src/components/UI/Button.vue')['default']
+    Button: typeof import('./src/components/Button.vue')['default']
+    DiscountBadge: typeof import('./src/components/DiscountBadge.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     FooterSection: typeof import('./src/components/FooterSection.vue')['default']
+    Gallery: typeof import('./src/components/Gallery.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Subheader: typeof import('./src/components/Subheader.vue')['default']
+    Thumbnail: typeof import('./src/components/Thumbnail.vue')['default']
   }
 }

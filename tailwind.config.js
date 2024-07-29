@@ -37,6 +37,7 @@ module.exports = {
         "tw-md": "0.875rem", // 14px
         "tw-lg": "1.25rem", // 20px
         "tw-xl": "1.875rem", // 30px
+        "tw-full": "50%",
       },
       gap: {
         xxl: "3rem", // 48px

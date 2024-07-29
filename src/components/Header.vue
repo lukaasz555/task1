@@ -1,6 +1,8 @@
 <template>
   <v-row tag="header" class="flex items-center mb-12" no-gutters>
-    <v-col cols="12" sm="5"> gallery </v-col>
+    <v-col cols="12" sm="5">
+      <Gallery />
+    </v-col>
     <v-col cols="12" sm="7">
       <div class="mb-2">
         <h1 class="text-tw-xxl font-tw-800 text-tw-text leading-none">
@@ -13,8 +15,8 @@
   </v-row>
 </template>
 
-<style scoped lang="scss">
-header {
-  background: teal;
-}
-</style>
+<script setup lang="ts">
+import Gallery from "./Gallery.vue";
+</script>
+
+<style scoped lang="scss"></style>
