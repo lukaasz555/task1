@@ -10,6 +10,7 @@ module.exports = {
         "tw-text": "#293632",
         "tw-gray": "#808080",
         "tw-border": "#ADADAD",
+        "tw-border-gray": "#DBDBDB",
         "tw-bg-gray": "#F5F5F5",
       },
       fontSize: {

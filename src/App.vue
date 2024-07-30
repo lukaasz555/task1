@@ -9,3 +9,7 @@
 <script lang="ts" setup>
 //
 </script>
+
+<style>
+@import "./styles//components/textfields.scss";
+</style>

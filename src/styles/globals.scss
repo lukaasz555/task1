@@ -15,6 +15,10 @@
 		@apply text-tw-sm font-tw-500 text-tw-primary text-nowrap;
 	}
 
+	.form-title {
+		@apply text-tw-md font-tw-500 text-tw-darkGreen text-center;
+	}
+
 	.footer-title {
 		@apply text-tw-xs text-tw-text font-tw-600 mb-1;
 	}
