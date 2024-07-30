@@ -1,22 +1,27 @@
 <template>
-  <v-row tag="header" class="flex items-center mb-12" no-gutters>
-    <v-col cols="12" sm="5">
+  <v-row tag="header" class="flex items-center mb-12 gap-4" no-gutters>
+    <v-col cols="12" md="5">
       <Gallery />
     </v-col>
-    <v-col cols="12" sm="7">
+    <v-col cols="12" md="6">
       <div class="mb-2">
-        <h1 class="text-tw-xxl font-tw-800 text-tw-text leading-none">
+        <h1
+          class="text-tw-xxl font-tw-800 text-tw-text leading-none text-center text-md-start"
+        >
           Chance to win a StockX Mystery Box today!
         </h1>
-        <p>Unleash the Excitement of Mystery Electronics</p>
+        <p class="text-center text-md-start">
+          Unleash the Excitement of Mystery Electronics
+        </p>
       </div>
-      <div>FORM GOES HERE</div>
+      <DetailsForm />
     </v-col>
   </v-row>
 </template>
 
 <script setup lang="ts">
 import Gallery from "./Gallery.vue";
+import DetailsForm from "./DetailsForm.vue";
 </script>
 
 <style scoped lang="scss"></style>
