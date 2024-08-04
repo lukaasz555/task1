@@ -8,6 +8,22 @@
 	}
 
 	.section-text {
-		@apply text-tw-base font-tw-400 text-tw-text leading-snug;
+		@apply text-tw-base font-tw-400 text-tw-text leading-snug mb-2;
+	}
+
+	.subheader-text {
+		@apply text-tw-sm font-tw-500 text-tw-primary text-nowrap;
+	}
+
+	.form-title {
+		@apply text-tw-md font-tw-500 text-tw-darkGreen text-center;
+	}
+
+	.footer-title {
+		@apply text-tw-xs text-tw-text font-tw-600 mb-1;
+	}
+
+	.footer-text {
+		@apply text-tw-xxs text-tw-text font-tw-400;
 	}
 }

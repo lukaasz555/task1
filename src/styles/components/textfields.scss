@@ -1,0 +1,22 @@
+.v-input.v-text-field {
+	&.v-input--density-compact {
+		& > .v-input__control > .v-field {
+			height: 48px;
+			border-radius: 10px;
+
+			&--focused {
+				& > .v-field__outline {
+					--v-field-border-width: 1px;
+					border-color: #2d473e;
+				}
+			}
+
+			.v-field__field {
+				align-items: center;
+				input {
+					color: #2d473e;
+				}
+			}
+		}
+	}
+}

@@ -13,7 +13,7 @@
         fullWidth ? 'w-full' : 'w-auto',
         clsx(
           isPrimary
-            ? 'bg-tw-primary text-tw-white rounded-tw-sm text-tw-base'
+            ? 'bg-tw-primary text-tw-white rounded-tw-sm text-tw-base p-3 uppercase font-tw-600'
             : ''
         ),
       ]"
