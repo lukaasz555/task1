@@ -9,6 +9,7 @@
         :src="getArticleImage()"
         alt="Article image"
         cover
+        eager
         class="rounded-tw-xl"
       ></v-img>
     </v-col>
@@ -19,7 +20,7 @@
         :class="[isEven ? 'pl-[32px]' : 'pr-[32px]']"
       >
         <slot name="title">
-          <h3 class="section-title">{{ article.title }}</h3>
+          <h3 v-html="highlightText()" class="section-title"></h3>
         </slot>
         <slot name="content">
           <div>
@@ -57,5 +58,13 @@ function getArticleImage(): string {
     .href;
 }
 
-console.log(getArticleImage());
+function highlightText(text = "StockX"): string {
+  if (props.article.title.includes(text)) {
+    return props.article.title.replace(
+      new RegExp(text, "g"),
+      `<span  class="section-title text-tw-primary">${text}</span>`
+    );
+  }
+  return props.article.title;
+}
 </script>

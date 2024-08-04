@@ -29,9 +29,10 @@
       <v-col cols="12">
         <div class="flex justify-center gap-4">
           <v-img
-            v-for="(img, index) in securityImages"
-            :key="index"
-            :src="img"
+            v-for="img in securityImages"
+            :key="img.id"
+            :src="img.src"
+            eager
             alt=""
             :max-height="40"
             :max-width="90"
@@ -60,5 +61,9 @@ const formData = reactive({
   email: "",
 });
 
-const securityImages = [pic1, pic2, pic3];
+const securityImages = [
+  { id: 1, src: pic1 },
+  { id: 2, src: pic2 },
+  { id: 3, src: pic3 },
+];
 </script>

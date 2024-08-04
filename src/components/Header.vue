@@ -10,7 +10,7 @@
         >
           Chance to win a StockX Mystery Box today!
         </h1>
-        <p class="text-center text-md-start">
+        <p class="text-center text-md-start text-tw-sm-plus text-tw-text">
           Unleash the Excitement of Mystery Electronics
         </p>
       </div>

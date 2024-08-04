@@ -1,6 +1,9 @@
 <template>
   <div class="d-flex flex-col items-center items-md-start">
-    <div class="mb-4 relative" style="max-height: 480px; max-width: 481px">
+    <div
+      class="mb-4 relative"
+      style="max-height: 480px; min-height: 480px; max-width: 481px"
+    >
       <img
         :src="images[activeIndex]"
         class="h-full w-full overflow-hidden object-cover"

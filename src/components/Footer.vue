@@ -1,10 +1,10 @@
 <template>
   <footer class="bg-tw-bg-gray px-4 py-6 flex column md:row-auto gap-xl">
     <FooterSection
-      v-for="(section, index) in footerSections"
+      v-for="section in footerSections"
       :title="section.title"
       :content="section.content"
-      :key="`section-${section.id}-${index}`"
+      :key="`section-${section.id}`"
     />
   </footer>
   <slot name="append">
@@ -13,7 +13,7 @@
         We accept the following credit cards
       </p>
       <div>
-        <v-img :src="PaymentProviders" :max-height="40"></v-img>
+        <v-img :src="PaymentProviders" :max-height="40" eager></v-img>
       </div>
     </div>
   </slot>
